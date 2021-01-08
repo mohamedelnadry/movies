@@ -1,0 +1,135 @@
+*{
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg-color{
+    background-color: #000000f2;
+}
+.form-control{
+    background-color: transparent !important;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    color: white !important;
+}
+input::placeholder {
+    text-align: center;
+}
+.film{
+    overflow: hidden;
+
+}
+.layer{
+
+    position: absolute;
+    background-color: rgba(255,255,255,.7);
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    top: 100%;
+    overflow: hidden;
+
+}
+.film:hover .layer{
+    top: 0;
+    transition: all 1s;
+
+}
+.display-text{
+    display: none;
+}
+.sidenav{
+    position: fixed;
+    left: -230;
+    top: 0px;
+    height: 100vh;
+    z-index: 10;
+    transition: all 1s;
+}
+.rightnav{
+    width: 60px;
+}
+.logo{
+    padding: 25px 0px;
+}
+.logo img{
+    height: 48px;
+}
+.menu i{
+font-size: 25px;
+color:  black;
+cursor: pointer;
+
+}
+.iconGLOBE i{
+    padding-top: 10px;
+    color:  black;
+}
+.iconSHARE i{
+    padding-top: 10px;
+    color:  black;
+}
+.iconS{
+    margin-bottom: 20px;
+}
+.leftnav{
+    position: relative;
+    width: 250px;
+    left: 0;
+    background-color: black;
+    color: white;
+    transition: all 0.6s;
+
+
+}
+.leftnav ul{
+    list-style: none;
+    padding-left: 40px;
+    overflow: hidden !important;
+    height: 300px;
+    transform: translateX(-100%);
+    transition: all 1s ease;
+    opacity: 0;
+    padding-top:400px
+}
+.open-menu{
+    transform: scale(1) !important;
+}
+.close-menu{
+    transform: translateX(-100%) !important;
+}
+.leftnav ul li{
+    opacity: 1;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .5s;
+    color: white;
+    text-decoration: none !important;
+
+}
+.leftnav ul li:hover{
+    color: tomato;
+}
+
+.about{
+    padding-left: 30px;
+    padding-bottom: 40px;
+    color: white;
+
+}
+.about i{
+    padding-left: 15px;
+    font-size: 14px;
+}
+.about a{
+    color: white;
+    transition: all .5s;
+}
+.about a:hover{
+    color: tomato;
+}
+.about p{
+    color: #999;
+}
